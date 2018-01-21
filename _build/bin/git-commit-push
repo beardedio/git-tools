@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+
+# Commit any added changes to the repo
+cur_date=$(date +"%Y-%m-%d %T")
+git commit -m "Auto update repository - $cur_date" && true
+
+# Push changes back up
+git push

@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+
+url=$1
+branch=${2:-master}
+
+# Pull repo
+git clone -b $branch --single-branch $url .

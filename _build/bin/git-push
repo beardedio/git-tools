@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo pipefail
+
+url=$1
+branch=${2:-"refs/heads/master"}
+
+if [ "${DISABLE_FORCE_PUSH:-null}" == null ]; then
+    git push $url HEAD:$branch --force
+else
+    git push $url HEAD:$branch
+fi
