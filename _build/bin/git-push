@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -xeuo pipefail
 
 url=$1
 branch=${2:-"refs/heads/master"}
