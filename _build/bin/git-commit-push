@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xeuo pipefail
+set -euo pipefail
 
 # Commit any added changes to the repo
 cur_date=$(date +"%Y-%m-%d %T")
